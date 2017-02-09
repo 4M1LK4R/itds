@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JS -->
+    <script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="../materialize/js/init.js"></script>
+    <script type="text/javascript" src="../js/fecha.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../fontello/css/fontello.css">
+    <title>itds</title>
+</head>
+
+<body class="blue-grey darken-4">
+    <header>
+        <nav class="top-nav light-blue darken-4">
+            <div class="container">
+                <a href="#!" data-activates="menuLateral" class="button-collapse top-nav full hide-on-large-only white-text waves-effect"><i class="icon-menu"></i></a>
+                <a href="#!" class="brand-logo white-text">ITDS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Inicio"><i class="icon-home"></i></a></li>
+                    <li><a href="quienes-somos.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="¿Quiénes Somos?"><i class="icon-users"></i></a></li>
+                    <li><a href="carreras.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Nuestras Carreras"><i class="icon-graduation-cap"></i></a></li>
+                    <li><a href="notas.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Notas"><i class="icon-th-list"></i></a></li>
+                    <li><a href="calendario.html" class="btn white light-blue-text text-darken-4 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Calendario Académico"><i class="icon-calendar"></i></a></li>
+                    <li><a href="contactanos.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Contáctanos"><i class="icon-globe"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="menuLateral" class="side-nav white-text light-blue darken-4">
+            <li class="logo light-blue darken-4 z-depth-1">
+                <div class="row">
+                    <div class="col s6">
+                        <h2><img src="../resources/images/logoITDS.png" class="responsive-img"></h2>
+                    </div>
+                    <div class="col s6">
+                        <h2 class="btn-block waves-effect waves-light light-blue darken-4 white-text" onclick="CerrarSideNav();"><i class="icon-cancel-1"></i></h2>
+</div>
+</div>
+</li>
+<ul class="collapsible" data-collapsible="accordion">
+    <li onclick="window.location='../index.html'">
+<div class="collapsible-header"><i class="icon-home"></i>Inicio</div>
+</li>
+<li onclick="window.location='quienes-somos.html'">
+<div class="collapsible-header"><i class="icon-users"></i>¿Quiénes Somos?</div>
+</li>
+<li onclick="window.location='carreras.html'">
+<div class="collapsible-header"><i class="icon-graduation-cap"></i>Nuestas Carreras</div>
+</li>
+<li onclick="window.location='notas.html'">
+<div class="collapsible-header"><i class="icon-th-list"></i>Notas</div>
+</li>
+<li onclick="window.location='calendario.html'" class="white light-blue-text text-darken-4">
+<div class="collapsible-header"><i class="icon-calendar"></i>Calendario Académico</div>
+</li>
+<li onclick="window.location='contactanos.html'">
+<div class="collapsible-header"><i class="icon-globe"></i>Contáctanos</div>
+</li>
+</ul>
+</ul>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h3 class="center-align white-text ">Calendario Académico Gestión 2017</h3>
+            </div>
+            <div class="col m2 l2"></div>
+            <div class="col s12 m8 l8">
+                <div class="card white z-depth-3">
+                    <div class="card-content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-floating light-blue darken-4"></a>
+                                    </td>
+                                    <td>Inicio de módulo.</td>
+                                    <td>
+                                        <a class="btn btn-floating red"></a>
+                                    </td>
+                                    <td>Feriado.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-floating light-blue"></a>
+                                    </td>
+                                    <td>Examen parcial.</td>
+                                    <td>
+                                        <a class="btn btn-floating deep-orange accent-1"></a>
+                                    </td>
+                                    <td>Descanso pedagógico.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-floating green"></a>
+                                    </td>
+                                    <td>Fin de módulo.</td>
+                                    <td>
+                                        <a class="btn btn-floating purple"></a>
+                                    </td>
+                                    <td>Fecha límite de pago.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2 l2"></div>
+        </div>
+        <div class="row">
+            <div class="col m2 l2"></div>
+            <div class="col s12 m8 l8">
+                <div class="card white z-depth-3">
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a id='ene' href="#enero">Enero</a></li>
+                            <li class="tab"><a id='feb' href="#febrero">Febrero</a></li>
+                            <li class="tab"><a id='mar' href="#marzo">Marzo</a></li>
+                            <li class="tab"><a id='abr' href="#abril">Abril</a></li>
+                            <li class="tab"><a id='may' href="#mayo">Mayo</a></li>
+                            <li class="tab"><a id='jun' href="#junio">Junio</a></li>
+                            <li class="tab"><a id='jul' href="#julio">Julio</a></li>
+                            <li class="tab"><a id='ago' href="#agosto">Agosto</a></li>
+                            <li class="tab"><a id='sep' href="#septiembre">Septiembre</a></li>
+                            <li class="tab"><a id='oct' href="#octubre">Octubre</a></li>
+                            <li class="tab"><a id='nov' href="#noviembre">Noviembre</a></li>
+                            <li class="tab"><a id='dic' href="#diciembre">Diciembre</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content">
+                        <div id="enero">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#dic').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Enero 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#feb').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>            
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">26</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">27</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">28</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">29</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">30</a></td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">2</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">3</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">4</a></td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">16</a></td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">23</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">24</a></td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                            <td class="grey-text text-lighten-1">4</td>
+                                            <td class="grey-text text-lighten-1">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="febrero">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#ene').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Febrero 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#mar').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">1</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">2</a></td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">13</a></td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">21</a></td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">27</a></td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">28</a></td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                            <td class="grey-text text-lighten-1">4</td>
+                                            <td class="grey-text text-lighten-1">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="marzo">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#feb').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Marzo 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#abr').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">27</td>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">3</a></td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">6</a></td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">17</a></td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">27</a></td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">31</a></td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="abril">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#mar').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Abril 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#may').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">27</td>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">3</a></td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">13</a></td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">14</a></td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">15</a></td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">24</a></td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="mayo">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#abr').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Mayo 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#jun').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">1</a></td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">2</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">3</a></td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">12</a></td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">23</a></td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">30</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">31</a></td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                            <td class="grey-text text-lighten-1">4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="junio">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#may').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Junio 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#jul').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">9</a></td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">15</a></td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">20</a></td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">21</a></td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">29</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">30</a></td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="julio">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#jun').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Julio 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#ago').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">26</td>
+                                            <td class="grey-text text-lighten-1">27</td>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">14</a></td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">17</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">18</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">19</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">20</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">21</a></td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">29</a></td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                            <td class="grey-text text-lighten-1">4</td>
+                                            <td class="grey-text text-lighten-1">5</td>
+                                            <td class="grey-text text-lighten-1">6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="agosto">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#jul').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Agosto 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#sep').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td>1</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">2</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">3</a></td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">7</a></td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">14</a></td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">23</a></td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">31</a></td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="septiembre">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#ago').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;Septiembre 2017&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#oct').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">1</a></td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">11</a></td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">21</a></td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">28</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">29</a></td>
+                                            <td>30</td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="octubre">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#sep').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Octubre 2017&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#nov').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">25</td>
+                                            <td class="grey-text text-lighten-1">26</td>
+                                            <td class="grey-text text-lighten-1">27</td>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">9</a></td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">18</a></td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">26</a></td>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">27</a></td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                            <td class="grey-text text-lighten-1">3</td>
+                                            <td class="grey-text text-lighten-1">4</td>
+                                            <td class="grey-text text-lighten-1">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="noviembre">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#oct').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;Noviembre 2017&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#dic').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td class="grey-text text-lighten-1">31</td>
+                                            <td>1</td>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">2</a></td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">10</a></td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">20</a></td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">24</a></td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped light-blue darken-4" data-position="top"
+                                                    data-delay="50" data-tooltip="Inicio de Módulo">27</a></td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td class="grey-text text-lighten-1">1</td>
+                                            <td class="grey-text text-lighten-1">2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                        <div id="diciembre">
+                            <p class="center-align flow-text">
+                                <button class="btn teal" onclick="$('#nov').trigger('click');"><i class="icon-left-open"></i></button>
+                                &nbsp;&nbsp;Diciembre 2017&nbsp;&nbsp;
+                                <button class="btn teal" onclick="$('#ene').trigger('click');"><i class="icon-right-open"></i></button>
+                            </p>
+                            <center>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="L">L</th>
+                                            <th data-field="M">M</th>
+                                            <th data-field="X">X</th>
+                                            <th data-field="J">J</th>
+                                            <th data-field="V">V</th>
+                                            <th data-field="S">S</th>
+                                            <th data-field="D">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="grey-text text-lighten-1">27</td>
+                                            <td class="grey-text text-lighten-1">28</td>
+                                            <td class="grey-text text-lighten-1">29</td>
+                                            <td class="grey-text text-lighten-1">30</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">8</a></td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td><a class="btn btn-floating tooltipped light-blue" data-position="top" data-delay="50"
+                                                    data-tooltip="Examen Parcial">15</a></td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td><a class="btn btn-floating tooltipped green" data-position="top" data-delay="50"
+                                                    data-tooltip="Fin de Módulo">22</a></td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-floating tooltipped red" data-position="top" data-delay="50"
+                                                    data-tooltip="Feriado">25</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">26</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">27</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">28</a></td>
+                                            <td><a class="btn btn-floating tooltipped deep-orange accent-1" data-position="top"
+                                                    data-delay="50" data-tooltip="Descanso Pedagógico">29</a></td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="page-footer light-blue darken-4 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="../resources/images/logoITDS.png" width="150">
+                    <p class="grey-text text-lighten-4">¡Tranforma tu vida!</p>
+                </center>
+            </div>
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="../resources/images/Log_UPDS_blanco.png" width="60">
+                    <p class="grey-text text-lighten-4">Somos parte de la red universitaria más grande de Bolivia.</p>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn white light-blue-text text-darken-4 z-depth-3"><i class="icon-thumbs-up left"></i>
+                        <div class="fb-like" data-href="https://www.facebook.com/ITDSTarija/?ref=ts&amp;fref=ts" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            </button>
+                </center>
+            </div>
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn light-blue darken-4 white-text z-depth-3" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook left"></i>&nbsp;Visitanos</button>
+    </center>
+    </div>
+    <div class="col s12 m4 l4">
+        <center>
+            <a class="waves-effect btn btn-block white light-blue-text text-darken-4 z-depth-3"><i class="icon-eye left"></i>Nro de Visitas 12000</a>
+        </center>
+    </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2017 Copyright Instituto Técnico Domingo Savio
+            <a class="grey-text text-lighten-4 right" href="#!">Web - Desing : Amilkar Dominguez</a>
+        </div>
+    </div>
+</footer>
+<!--Inicio Botones Flotantes-->
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+        <i class="icon-info"></i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red" onclick="window.open('tel:65820535', '_system');"><i class="icon-phone"></i></a>
+</li>
+<li>
+    <a class="btn-floating light-blue darken-4" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook"></i></a>
+</li>
+<li>
+    <a class="btn-floating blue" onclick="window.open('https://m.me/ITDSTarija','_system');"><i class="icon-commenting"></i></a>
+</li>
+<li>
+    <a class="btn-floating green" onclick="window.open('https://4m1lk4r.github.io/msg_itds','_system');"><i class="icon-whatsapp"></i></a>
+</li>
+</ul>
+</div>
+<!--Fin Botones Flotantes-->
+<div id="fb-root"></div>
+<script type="text/javascript">
+                                           (function (d, s, id) {
+                                               var js, fjs = d.getElementsByTagName(s)[0];
+                                               if (d.getElementById(id)) return;
+                                               js = d.createElement(s); js.id = id;
+                                               js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+                                               fjs.parentNode.insertBefore(js, fjs);
+                                           } (document, 'script', 'facebook-jssdk'));
+
+                                           function CerrarSideNav() {
+                                               $('button-collapse').sideNav('hide');
+                                           };
+</script>
+</body>
+
+</html>

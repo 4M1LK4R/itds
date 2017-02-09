@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JS -->
+    <script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="../materialize/js/init.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../fontello/css/fontello.css">
+    <title>itds</title>
+</head>
+
+<body class="blue-grey darken-4">
+    <header>
+        <nav class="top-nav  light-blue darken-4">
+            <div class="container">
+                <a href="#!" data-activates="menuLateral" class="button-collapse top-nav full hide-on-large-only white-text waves-effect"><i class="icon-menu"></i></a>
+                <a href="#!" class="brand-logo white-text">ITDS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Inicio"><i class="icon-home"></i></a></li>
+                    <li><a href="quienes-somos.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="¿Quiénes Somos?"><i class="icon-users"></i></a></li>
+                    <li><a href="carreras.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Nuestras Carreras"><i class="icon-graduation-cap"></i></a></li>
+                    <li><a href="notas.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="Notas"><i class="icon-th-list"></i></a></li>
+                    <li><a href="calendario.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Calendario Académico"><i class="icon-calendar"></i></a></li>
+                    <li><a href="contactanos.html" class="btn white light-blue-text text-darken-4 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Contáctanos"><i class="icon-globe"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="menuLateral" class="side-nav white-text light-blue darken-4">
+            <li class="logo light-blue darken-4 z-depth-1">
+                <div class="row">
+                    <div class="col s6">
+                        <h2><img src="../resources/images/logoITDS.png" class="responsive-img"></h2>
+                    </div>
+                    <div class="col s6">
+                        <h2 class="btn-block waves-effect waves-light light-blue darken-4 white-text" onclick="CerrarSideNav();"><i class="icon-cancel-1"></i></h2>
+</div>
+</div>
+</li>
+<ul class="collapsible" data-collapsible="accordion">
+    <li onclick="window.location='../index.html'">
+<div class="collapsible-header"><i class="icon-home"></i>Inicio</div>
+</li>
+<li onclick="window.location='quienes-somos.html'">
+<div class="collapsible-header"><i class="icon-users"></i>¿Quiénes Somos?</div>
+</li>
+<li onclick="window.location='carreras.html'">
+<div class="collapsible-header"><i class="icon-graduation-cap"></i>Nuestas Carreras</div>
+</li>
+<li onclick="window.location='notas.html'">
+<div class="collapsible-header"><i class="icon-th-list"></i>Notas</div>
+</li>
+<li onclick="window.location='calendario.html'">
+<div class="collapsible-header"><i class="icon-calendar"></i>Calendario Académico</div>
+</li>
+<li onclick="window.location='contactanos.html'" class="white light-blue-text text-darken-4">
+<div class="collapsible-header"><i class="icon-globe"></i>Contáctanos</div>
+</li>
+</ul>
+</ul>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h1 class="center-align white-text ">Contáctanos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l6 white-text">
+                <h5 class="left-align">Encuéntranos en:</h5>
+                <p class="flow-text left-align">Dirección</p>
+                <p class="left-align">Calle Daniel Campos #951 entre Corrado y Domingo Paz</p>
+                <p class="flow-text left-align">Teléfonos</p>
+                <p class="left-align">66-65451 / 66-65452</p>
+                <p class="flow-text left-align">Celular</p>
+                <p class="left-align">75148844&nbsp
+                    <button class="waves-effect waves-light btn red" onclick="window.open('tel:65820535', '_system');"><i class="icon-phone"></i>Llamar</button>&nbsp<button class="btn-floating waves-effect waves-light green" onclick="window.open('https://4m1lk4r.github.io/msg_itds','_system');"><i class="icon-whatsapp"></i></button>
+</p>
+<p class="flow-text left-align">Buscanos en Facebook</p>
+<p class="left-align">ITDStarija&nbsp
+    <button class="waves-effect waves-light btn light-blue darken-4 white" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook"></i>Visitanos</button>
+</p>
+</div>
+<div class="col s12 m6 l6 white-text">
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.402486656183!2d-64.73202400000004!3d-21.531111999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94064809bb187429%3A0x298cd29b61717ed7!2sInstituto+T%C3%A9cnico+Domingo+Savio!5e0!3m2!1ses!2sbo!4v1440188159583"
+        width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="col s12 m12 l12">
+    <h5 class="center-align white-text">Dejanos un comentario.</h5>
+</div>
+<div class="col m3 l3"></div>
+<div class="col s12 m6 l6 white">
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+                                                                                                                                         var js, fjs = d.getElementsByTagName(s)[0];
+                                                                                                                                         if (d.getElementById(id)) return;
+                                                                                                                                         js = d.createElement(s); js.id = id;
+                                                                                                                                         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+                                                                                                                                         fjs.parentNode.insertBefore(js, fjs);
+                                                                                                                                     } (document, 'script', 'facebook-jssdk'));</script>
+<center>
+    <div class="fb-comments" data-href="http://www.itdstarija.com/" data-width="400" data-numposts="5"></div>
+</center>
+</div>
+<div class="col m3 l3"></div>
+
+
+</div>
+</main>
+
+<footer class="page-footer light-blue darken-4 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="../resources/images/logoITDS.png" width="150">
+                    <p class="grey-text text-lighten-4">¡Tranforma tu vida!</p>
+                </center>
+            </div>
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="../resources/images/Log_UPDS_blanco.png" width="60">
+                    <p class="grey-text text-lighten-4">Somos parte de la red universitaria más grande de Bolivia.</p>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn white light-blue-text text-darken-4 z-depth-3"><i class="icon-thumbs-up left"></i>
+                        <div class="fb-like" data-href="https://www.facebook.com/ITDSTarija/?ref=ts&amp;fref=ts" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            </button>
+                </center>
+            </div>
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn light-blue darken-4 white-text z-depth-3" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook left"></i>&nbsp;Visitanos</button>
+</center>
+</div>
+<div class="col s12 m4 l4">
+    <center>
+        <a class="waves-effect btn btn-block white light-blue-text text-darken-4 z-depth-3"><i class="icon-eye left"></i>Nro de Visitas 12000</a>
+    </center>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        © 2017 Copyright Instituto Técnico Domingo Savio
+        <a class="grey-text text-lighten-4 right" href="#!">Web - Desing : Amilkar Dominguez</a>
+    </div>
+</div>
+</footer>
+<!--Inicio Botones Flotantes-->
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+        <i class="icon-info"></i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red" onclick="window.open('tel:65820535', '_system');"><i class="icon-phone"></i></a>
+</li>
+<li>
+    <a class="btn-floating light-blue darken-4" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook"></i></a>
+</li>
+<li>
+    <a class="btn-floating blue" onclick="window.open('https://m.me/ITDSTarija','_system');"><i class="icon-commenting"></i></a>
+</li>
+<li>
+    <a class="btn-floating green" onclick="window.open('https://4m1lk4r.github.io/msg_itds','_system');"><i class="icon-whatsapp"></i></a>
+</li>
+</ul>
+</div>
+<!--Fin Botones Flotantes-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+                                               var js, fjs = d.getElementsByTagName(s)[0];
+                                               if (d.getElementById(id)) return;
+                                               js = d.createElement(s); js.id = id;
+                                               js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+                                               fjs.parentNode.insertBefore(js, fjs);
+                                           } (document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+        function CerrarSideNav() {
+            $('button-collapse').sideNav('hide');
+            //Materialize.toast('Cerrando',4000);
+        };
+</script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="materialize/js/init.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+    <title>itds</title>
+</head>
+
+<body class="blue-grey darken-4">
+    <header>
+        <nav class="top-nav  light-blue darken-4">
+            <div class="container">
+                <a href="#!" data-activates="menuLateral" class="button-collapse top-nav full hide-on-large-only white-text waves-effect"><i class="icon-menu"></i></a>
+                <a href="#!" class="brand-logo white-text">ITDS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="btn white light-blue-text text-darken-4 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Inicio"><i class="icon-home"></i></a></li>
+                    <li><a href="view/quienes-somos.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="¿Quiénes Somos?"><i class="icon-users"></i></a></li>
+                    <li><a href="view/carreras.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Nuestras Carreras"><i class="icon-graduation-cap"></i></a></li>
+                    <li><a href="view/notas.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Notas"><i class="icon-th-list"></i></a></li>
+                    <li><a href="view/calendario.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Calendario Académico"><i class="icon-calendar"></i></a></li>
+                    <li><a href="view/contactanos.html" class="btn light-blue darken-3 z-depth-3 tooltipped" data-position="bottom"
+                            data-delay="50" data-tooltip="Contáctanos"><i class="icon-globe"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="menuLateral" class="side-nav white-text light-blue darken-4">
+            <li class="logo light-blue darken-4 z-depth-1">
+                <div class="row">
+                    <div class="col s6">
+                        <h2><img src="resources/images/logoITDS.png" class="responsive-img"></h2>
+                    </div>
+                    <div class="col s6">
+                        <h2 class="btn-block waves-effect waves-light light-blue darken-4 white-text" onclick="CerrarSideNav();"><i class="icon-cancel-1"></i></h2>
+</div>
+</div>
+</li>
+<ul class="collapsible" data-collapsible="accordion">
+    <li onclick="window.location='index.html'" class="white light-blue-text text-darken-4">
+<div class="collapsible-header"><i class="icon-home"></i>Inicio</div>
+</li>
+<li onclick="window.location='view/quienes-somos.html'">
+<div class="collapsible-header"><i class="icon-users"></i>¿Quiénes Somos?</div>
+</li>
+<li onclick="window.location='view/carreras.html'">
+<div class="collapsible-header"><i class="icon-graduation-cap"></i>Nuestas Carreras</div>
+</li>
+<li onclick="window.location='view/notas.html'">
+<div class="collapsible-header"><i class="icon-th-list"></i>Notas</div>
+</li>
+<li onclick="window.location='view/calendario.html'">
+<div class="collapsible-header"><i class="icon-calendar"></i>Calendario Académico</div>
+</li>
+<li onclick="window.location='view/contactanos.html'">
+<div class="collapsible-header"><i class="icon-globe"></i>Contáctanos</div>
+</li>
+</ul>
+</ul>
+</header>
+<main>
+    <!--Inicio Slide-->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="resources/images/slide/slide1.png">
+                <div class="caption right-align">
+                    <h5 class="light text-lighten-1">¡Tranforma tu Vida!</h5>
+                    <h5 class="light text-lighten-1">INICIO DE CLASES</h5>
+                    <h3 class="light">7 de Marzo</h3>
+                </div>
+            </li>
+            <li>
+                <img src="resources/images/slide/slide2.jpg">
+            </li>
+            <li>
+                <img src="resources/images/slide/slide3.jpg">
+                <div class="caption right-align light-blue-text text-darken-4">
+                    <h5 class="light text-lighten-1">INICIO DE CLASES</h5>
+                    <h3 class="light">7 de Marzo</h3>
+                </div>
+            </li>
+            <li>
+                <img src="resources/images/slide/slide4.jpg">
+            </li>
+        </ul>
+    </div>
+    <!--Fin Slide-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align white-text ">INSTITUTO TÉCNICO DOMINGO SAVIO</h2>
+            </div>
+            <div class="col s12 m12 white-text">
+                <h2 class="center-align">¿Qué carreras te ofrecemos?</h2>
+                <p class="flow-text center-align">Selecciona un nivel y transforma tu vida.</p>
+            </div>
+            <div class="col s12 m3">
+                <div class="card white">
+                    <div class="card-content light-blue-text text-darken-4">
+                        <span class="card-title center-align">Técnico<br>Superior</span>
+                        <img src="resources/images/tecnico_superior.png" class="responsive-img">
+                        <center>
+                            <a class="waves-effect waves-light btn light-blue darken-4"><i class="icon-right-open right"></i>Ver mas</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card white z-depth-3">
+                    <div class="card-content light-blue-text text-darken-4">
+                        <span class="card-title center-align">Técnico<br>Medio</span>
+                        <img src="resources/images/tecnico_medio.png" class="responsive-img">
+                        <center>
+                            <a class="waves-effect waves-light btn light-blue darken-4"><i class="icon-right-open right"></i>Ver mas</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card white">
+                    <div class="card-content light-blue-text text-darken-4">
+                        <span class="card-title center-align"><br>Capacitación</span>
+                        <img src="resources/images/capacitacion.png" class="responsive-img">
+                        <center>
+                            <a class="waves-effect waves-light btn light-blue darken-4"><i class="icon-right-open right"></i>Ver mas</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card white">
+                    <div class="card-content light-blue-text text-darken-4">
+                        <span class="card-title center-align">Curso<br>Corto</span>
+                        <img src="resources/images/curso_corto.png" class="responsive-img">
+                        <center>
+                            <a class="waves-effect waves-light btn light-blue darken-4"><i class="icon-right-open right"></i>Ver mas</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 white-text">
+                <h2 class="center-align">¿Por qué elegirnos?</h2>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-tag-1"></i></h1>
+                <p>Matricula e inscripción ¡Gratis!</p>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-desktop"></i></h1>
+                <p>Laboratorios de ultima generación.</p>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-handshake-o"></i></h1>
+                <p>Convenios interinstitucionales.</p>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-check"></i></h1>
+                <p>Docentes altamente capacitados y cursos 90% prácticos.</p>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-black-tie"></i></h1>
+                <p>Oportundades laborales.</p>
+            </div>
+            <div class="col s12 m4 l4 white-text center-align flow-text">
+                <h1><i class="icon-docs-1"></i></h1>
+                <p>Convalidación de materias.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="page-footer light-blue darken-4 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="resources/images/logoITDS.png" width="150">
+                    <p class="grey-text text-lighten-4">¡Tranforma tu vida!</p>
+                </center>
+            </div>
+            <div class="col s12 m6 l6">
+                <center>
+                    <img src="resources/images/Log_UPDS_blanco.png" width="60">
+                    <p class="grey-text text-lighten-4">Somos parte de la red universitaria más grande de Bolivia.</p>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn white light-blue-text text-darken-4 z-depth-3"><i class="icon-thumbs-up left"></i>
+                        <div class="fb-like" data-href="https://www.facebook.com/ITDSTarija/?ref=ts&amp;fref=ts" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            </button>
+                </center>
+            </div>
+            <div class="col s12 m4 l4">
+                <center>
+                    <button class="waves-effect btn light-blue darken-4 white-text z-depth-3" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook left"></i>&nbsp;Visitanos</button>
+</center>
+</div>
+<div class="col s12 m4 l4">
+    <center>
+        <a class="waves-effect btn btn-block white light-blue-text text-darken-4 z-depth-3"><i class="icon-eye left"></i>Nro de Visitas 12000</a>
+    </center>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        © 2017 Copyright Instituto Técnico Domingo Savio
+        <a class="grey-text text-lighten-4 right" href="#!">Web - Desing : Amilkar Dominguez</a>
+    </div>
+</div>
+</footer>
+<!--Inicio Botones Flotantes-->
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+        <i class="icon-info"></i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red" onclick="window.open('tel:65820535', '_system');"><i class="icon-phone"></i></a>
+</li>
+<li>
+    <a class="btn-floating light-blue darken-4" onclick="window.open('https://www.facebook.com/ITDSTarija','_system');"><i class="icon-facebook"></i></a>
+</li>
+<li>
+    <a class="btn-floating blue" onclick="window.open('https://m.me/ITDSTarija','_system');"><i class="icon-commenting"></i></a>
+</li>
+<li>
+    <a class="btn-floating green" onclick="window.open('https://4m1lk4r.github.io/msg_itds','_system');"><i class="icon-whatsapp"></i></a>
+</li>
+</ul>
+</div>
+<!--Fin Botones Flotantes-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+                                               var js, fjs = d.getElementsByTagName(s)[0];
+                                               if (d.getElementById(id)) return;
+                                               js = d.createElement(s); js.id = id;
+                                               js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+                                               fjs.parentNode.insertBefore(js, fjs);
+                                           } (document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+        function CerrarSideNav() {
+            $('button-collapse').sideNav('hide');
+            //Materialize.toast('Cerrando',4000);
+        };
+</script>
+</body>
+
+</html>
